@@ -1,26 +1,16 @@
 {
   "name": "MERN-blog-app",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "dependencies": {
-    "axios": "^0.17.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "mdbootstrap": "^4.4.1",
     "mongodb": "^2.2.33",
     "mongoose": "^4.12.4",
-    "nodemon": "^1.12.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-icons": "^2.2.7",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14"
+    "nodemon": "^1.12.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   }
 }

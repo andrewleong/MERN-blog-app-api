@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
+
 
 // create an express app
 const app = express();
@@ -14,11 +16,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // allow static dir to access public dir
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname + '/client/build')));
 
 // Required application specific custom router module
-const router = require('./src/routes/BlogRoutes');
-// ask app to use the routes for the API 
+const router = require('./routes/BlogRoutes');
+// ask app to use the routes for the API
 app.use('/blogposts', router);
 
 
