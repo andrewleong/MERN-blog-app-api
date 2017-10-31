@@ -4,9 +4,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class EachPost extends Component {
-  constructor(props){
-    super(props);
-  }
 
   // ViewClickedPost = (id) => {
   //     <Link to={`/post/${id}`}> </Link>
@@ -14,7 +11,7 @@ class EachPost extends Component {
   // }
 
   render(){
-    const { id, title, description, contents } = this.props;
+    const { id, title, description} = this.props;
     return(
       <div>
 
