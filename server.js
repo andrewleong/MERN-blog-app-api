@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // allow static dir to access public dir
-app.use(express.static(path.join(__dirname + '/client/build')));
+app.use(express.static(path.join(__dirname + 'client/build')));
 
 // Required application specific custom router module
 const router = require('./routes/BlogRoutes');
