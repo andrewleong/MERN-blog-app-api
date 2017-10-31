@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   getAllPost = () => {
-    axios.get('http://localhost:3001/blogposts/posts')
+    axios.get('https://mern-blogging-app.herokuapp.com/blogposts/posts')
     .then( (response) => {
       this.setState({posts: response.data.results})
     }, (err) => {
