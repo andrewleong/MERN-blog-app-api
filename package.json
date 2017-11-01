@@ -1,7 +1,7 @@
 {
   "name": "MERN-blog-app",
   "version": "1.0.0",
-  "private": true,
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.17.0",
     "body-parser": "^1.18.2",
