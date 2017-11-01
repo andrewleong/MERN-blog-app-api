@@ -37,7 +37,7 @@ class App extends Component {
 
   checkPostExist = () => {
     if(this.state.posts && this.state.posts.length <= 0){
-      return <div className="no-posts">Please create some blogposts, there are currently no existing posts here.</div>;
+      return <div className="no-posts">Please create some blog posts, there are currently no existing posts here.</div>;
     }
   }
   // <Link to="/create-post" className="float-right btn btn-primary waves-effect waves-light">Create Post</Link>

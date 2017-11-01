@@ -14,17 +14,14 @@ class EachPost extends Component {
     const { id, title, description} = this.props;
     return(
       <div>
-
         <div className="card">
-        <div className="card-block">
-<h4 className="card-title">{title}</h4>
-<hr />
-<p className="card-text">{description}</p>
-<Link to= {`/post/${id}`} >View</Link>
-<Link to= {`/post/${id}`} >Edit</Link>
-  </div>
-</div>
-
+            <div className="card-block">
+                <h4 className="card-title">{title}</h4>
+                <hr />
+                <p className="card-text">{description}</p>
+                <Link to= {`/post/${id}`} >View</Link>
+            </div>
+        </div>
       </div>
     );
   }
