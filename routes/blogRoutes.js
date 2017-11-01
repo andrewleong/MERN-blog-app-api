@@ -9,7 +9,7 @@ let blogpost = require('../models/blogpost');
 
 // ROUTES
 // CREATE A POST
-router.post('/post' , (req,res) => {
+router.post('/api/post' , (req,res) => {
   const post = new blogpost(req.body);
   console.log(post);
   // saving the req.body(json obj) to database
@@ -36,7 +36,7 @@ router.get('/api/posts', (req,res) => {
 });
 
 // GET ONE POST
-router.get('/post/:id', (req,res) => {
+router.get('/api/post/:id', (req,res) => {
   const { id } = req.params;
   // Validate ID using isValid
   if(!ObjectID.isValid(id)){
@@ -52,7 +52,7 @@ router.get('/post/:id', (req,res) => {
 })
 
 // UPDATE ONE POST
-router.patch('/post/:id', (req,res) => {
+router.patch('/api/post/:id', (req,res) => {
   const { id } = req.params;
   // Validate ID using isValid
   if(!ObjectID.isValid(id)){
@@ -78,7 +78,7 @@ router.patch('/post/:id', (req,res) => {
 });
 
 // DELETE ONE POST
-router.delete('/post/:id', (req,res) => {
+router.delete('/api/post/:id', (req,res) => {
   const { id } = req.params;
   if(!ObjectID.isValid(id)){
     return res.status(404).send(`Invalid ID, no such ID here`);
