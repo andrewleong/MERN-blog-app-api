@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   getAllPost = () => {
-    axios.get('/blogposts/posts')
+    axios.get('/blogposts/api/posts')
     .then( (response) => {
       this.setState({posts: response.data.results})
     }, (err) => {

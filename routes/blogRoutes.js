@@ -23,7 +23,7 @@ router.post('/post' , (req,res) => {
 });
 
 // GET ALL POSTS
-router.get('/posts', (req,res) => {
+router.get('/api/posts', (req,res) => {
   blogpost.find().then( (results) => {
     // if(results.length === 0){
     //   return res.status(404).json('There are no existing blog post! Pls create some.');
