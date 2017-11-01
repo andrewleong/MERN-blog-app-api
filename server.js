@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname + 'client/build')));
 
 // Required application specific custom router module
-const router = require('./routes/BlogRoutes');
+const router = require('./routes/blogRoutes');
 // ask app to use the routes for the API
 app.use('/blogposts', router);
 
