@@ -1,6 +1,12 @@
 {
-  "name": "MERN-blog-app",
+  "name": "MERN-blog-app-api",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.7.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -8,8 +14,5 @@
     "mongodb": "^2.2.33",
     "mongoose": "^4.12.4",
     "nodemon": "^1.12.1"
-  },
-  "scripts": {
-    "start": "node server.js"
   }
 }
